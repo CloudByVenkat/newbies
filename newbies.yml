@@ -62,7 +62,7 @@ stages:
       - task: AzureRmWebAppDeployment@4
         inputs:
           ConnectionType: 'AzureRM' #Connection type
-          azureSubscription: '19644874-3e1c-4f4a-8d5f-2901769bf6a7'
+          azureSubscription: 'Platform-Subscription'
           appType: 'webApp'  #Required when ConnectionType = AzureRM. App Service type
           WebAppName: 'purviittech' #<App Service Name.>
           packageForLinux: '$(Pipeline.Workspace)'
